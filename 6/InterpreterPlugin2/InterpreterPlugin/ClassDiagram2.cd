@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Plugin.Class1">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYgACgBAAAgAEgQCAEAAAIQAAAAgAAAAAAAAAKAAAAA=</HashCode>
+      <FileName>Class1.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_beginNode" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Plugin.CodeGenerator">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAEAAAAAACAAAACAAAAAAAEAAAAAgAA=</HashCode>
+      <FileName>TranslatorWorkers\CodeGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Plugin.Lexer">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Plugin.Lexer.Words" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>InterpreterWorkers\Lexer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Plugin.Lexer.Symbols" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>InterpreterWorkers\Lexer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAACAAAAAAAAAACAAACAAAAAAAAA=</HashCode>
+      <FileName>TranslatorWorkers\Lexer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Plugin.Semantic">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Plugin.Semantic.VarType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>InterpreterWorkers\Semantic.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAgAAAAAQAAAAACCAAAAAIAAAAAgAAAAAAQ=</HashCode>
+      <FileName>TranslatorWorkers\Semantic.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_beginNode" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Plugin.SyntaxTree">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Plugin.SyntaxTree.TypeNode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>InterpreterWorkers\SyntaxTree.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAgAEAAoAAAAAgQACAAAAACAABAAAAAFAAAEAAQCICA=</HashCode>
+      <FileName>TranslatorWorkers\SyntaxTree.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="beginNode" />
+      <Field Name="_curTok" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Plugin.Translator">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAABgAAgAAAAAAAAAAIQAAAEAEAAAgAAAAAIAAAA=</HashCode>
+      <FileName>TranslatorWorkers\Translator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_lexer" />
+      <Field Name="_synTree" />
+      <Field Name="_sem" />
+      <Property Name="BeginNode" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Plugin.Node">
+    <Position X="10" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAYAAAAAAAABAAACAIAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Util\Node.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="parent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Plugin.Pair&lt;T1, T2&gt;">
+    <Position X="2.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Util\Pair.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterpreterPlugin.OutputTable">
+    <Position X="14.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAIAACAAAgAAACCAAAACAAgwAAEAAAAIAABAAAA=</HashCode>
+      <FileName>OutputWindows\OutputTable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_disc" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="InterpreterPlugin.TreeForm">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADgFEAAAACAAACggAACAAAACAACAQAAIAEAIAAAABAA=</HashCode>
+      <FileName>OutputWindows\TreeForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_stNode" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
