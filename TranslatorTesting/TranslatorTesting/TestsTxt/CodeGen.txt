@@ -1,0 +1,35 @@
+a = 10
+b = 11
+c = 222.0
+for i in range(2):
+ for j in range(b):
+  for k in range(a, b, 2):
+   z = a * b + c
+ k = 1
+c = 22
+/
+z = 12
+for p in range(2, 10):
+  for i in range(3, 10):
+    for j in range(1, 12, 2):
+      z = z + 12 * 2
+/
+a = 10
+for x in range(10):
+  for z in range(a):
+    k = (1000 + 1) * 3
+/
+for z in range(20):
+ for k in range(21):
+  for i in range(1, 2, 3):
+   for p in range(22, 31):
+    e = i * p * k * i * z
+  e = k * z
+ e = z * 20
+e = 11
+/
+for i in range(10):
+ a = 10
+ for z in range(5):
+  b = 12
+c = 11

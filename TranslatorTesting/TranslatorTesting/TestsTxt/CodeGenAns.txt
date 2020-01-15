@@ -1,0 +1,105 @@
+&a& := 10
+&b& := 11
+&c& := 222.0
+&i& := 0
+LABEL &labelIn0&
+IF &i& >= 2 THEN GOTO &lablOut0&
+ &j& := 0
+ LABEL &labelIn1&
+ IF &j& >= &b& THEN GOTO &lablOut1&
+  &k& := &a&
+  LABEL &labelIn2&
+  IF &k& >= &b& THEN GOTO &lablOut2&
+   &z& := &a& * &b& + &c&
+  &k& := &k& + 2
+  GOTO &labelIn2&
+  LABEL &labelOut2&
+ &j& := &j& + 1
+ GOTO &labelIn1&
+ LABEL &labelOut1&
+ &k& := 1
+&i& := &i& + 1
+GOTO &labelIn0&
+LABEL &labelOut0&
+&c& := 22
+/
+&z& := 12
+&p& := 2
+LABEL &labelIn0&
+IF &p& >= 10 THEN GOTO &lablOut0&
+  &i& := 3
+  LABEL &labelIn1&
+  IF &i& >= 10 THEN GOTO &lablOut1&
+    &j& := 1
+    LABEL &labelIn2&
+    IF &j& >= 12 THEN GOTO &lablOut2&
+      &z& := &z& + 12 * 2
+    &j& := &j& + 2
+    GOTO &labelIn2&
+    LABEL &labelOut2&
+  &i& := &i& + 1
+  GOTO &labelIn1&
+  LABEL &labelOut1&
+&p& := &p& + 1
+GOTO &labelIn0&
+LABEL &labelOut0&
+/
+&a& := 10
+&x& := 0
+LABEL &labelIn0&
+IF &x& >= 10 THEN GOTO &lablOut0&
+  &z& := 0
+  LABEL &labelIn1&
+  IF &z& >= &a& THEN GOTO &lablOut1&
+    &k& := ( 1000 + 1) * 3
+  &z& := &z& + 1
+  GOTO &labelIn1&
+  LABEL &labelOut1&
+&x& := &x& + 1
+GOTO &labelIn0&
+LABEL &labelOut0&
+/
+&z& := 0
+LABEL &labelIn0&
+IF &z& >= 20 THEN GOTO &lablOut0&
+ &k& := 0
+ LABEL &labelIn1&
+ IF &k& >= 21 THEN GOTO &lablOut1&
+  &i& := 1
+  LABEL &labelIn2&
+  IF &i& >= 2 THEN GOTO &lablOut2&
+   &p& := 22
+   LABEL &labelIn3&
+   IF &p& >= 31 THEN GOTO &lablOut3&
+    &e& := &i& * &p& * &k& * &i& * &z&
+   &p& := &p& + 1
+   GOTO &labelIn3&
+   LABEL &labelOut3&
+  &i& := &i& + 3
+  GOTO &labelIn2&
+  LABEL &labelOut2&
+  &e& := &k& * &z&
+ &k& := &k& + 1
+ GOTO &labelIn1&
+ LABEL &labelOut1&
+ &e& := &z& * 20
+&z& := &z& + 1
+GOTO &labelIn0&
+LABEL &labelOut0&
+&e& := 11
+/
+&i& := 0
+LABEL &labelIn0&
+IF &i& >= 10 THEN GOTO &lablOut0&
+ &a& := 10
+ &z& := 0
+ LABEL &labelIn1&
+ IF &z& >= 5 THEN GOTO &lablOut1&
+  &b& := 12
+ &z& := &z& + 1
+ GOTO &labelIn1&
+ LABEL &labelOut1&
+&i& := &i& + 1
+GOTO &labelIn0&
+LABEL &labelOut0&
+&c& := 11

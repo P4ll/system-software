@@ -1,0 +1,10 @@
+a = 10.0
+for z in range(a):
+ k = 1
+/
+a = 10
+for i in range(10.0, 123):
+ k = 1
+/
+for i in range(11, 123):
+ i = 1

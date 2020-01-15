@@ -1,0 +1,9 @@
+dfd dfdf 3
+/
+for k in range(3, 1, 2, 3):
+  z = k + 1 * k
+/
+for k range() range():
+  z = k + 1 * k
+/
+a = for z in range(12, 200, 1):
